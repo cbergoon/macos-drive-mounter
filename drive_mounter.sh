@@ -47,15 +47,11 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
     if [ $up = 1 ]; then
         mount=`mount | grep $resource | awk '{print $3}'`
         if [ "$mount" != "/Volumes${resource}" ]; then
-            # https://github.com/alloy/terminal-notifier
-            # terminal-notifier -title 'Shares watchdog' -message 'Mounting ${resource} share'
             echo 'mount volume "'${line}'"'
             osascript -e 'mount volume "'${line}'"'
             echo "Mounted share ${resource}"
         fi
     else
-        # https://github.com/alloy/terminal-notifier
-        # terminal-notifier -title 'Shares watchdog' -message 'NAS is not reachable'
         echo "Unable to mount share ${resource}"
     fi
 done < "$HOME/.drive_mounter.conf"
