@@ -1,2 +1,5 @@
-# drive-mounter
-Bash script to automatically mount drives on macOS
+### macOS Drive Mounter
+Bash script to automatically mount network drives on macOS.
+
+#### Set Up
+
