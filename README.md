@@ -19,8 +19,8 @@ check the box that will save the credentials in the KeyChain so that the drives 
 NOTE: The configuration file is located at: ```~/.drive_mounter.conf```. The install script renames the 
 ```private.drive_mounter.conf``` to ```.drive_mounter.conf``` and copies it to ```~/```.
 
-Give the ```install.sh``` execute permissions with ```chmod +x ./install.sh``` and 
-run the script with ```./install.sh```. The installer will take the following actions:
+Give the ```install.sh``` execute permissions with ```chmod +x ./install.sh``` and run the script with ```./install.sh```. 
+The installer will take the following actions:
 
 NOTE: the steps below are explanatory and will be automatically completed by the install script.
 
